@@ -26,6 +26,13 @@ cp -f ${folder}/BTC_wallet_latest.csv ${folder}/BTC_transition_${today}.csv
 wget --no-check-certificate "https://www.quandl.com/api/v3/datasets/BCHAIN/TOTBC.csv?api_key=ZXoDiFyiFFUx5eFohZ9i" -O ${folder}/BTC_total_coins_latest.csv
 cp -f ${folder}/BTC_total_coins_latest.csv ${folder}/BTC_total_coins_${today}.csv
 
+wget --no-check-certificate "https://www.quandl.com/api/v3/datasets/BCHAIN/CPTRA.csv?api_key=ZXoDiFyiFFUx5eFohZ9i" -O ${folder}/BTC_cost_latest.csv
+cp -f ${folder}/BTC_cost_latest.csv ${folder}/BTC_cost_${today}.csv
+
+wget --no-check-certificate "https://www.quandl.com/api/v3/datasets/BCHAIN/AVBLS.csv?api_key=ZXoDiFyiFFUx5eFohZ9i&start_date=2010-01-01" -O ${folder}/BTC_size_latest.csv
+cp -f ${folder}/BTC_size_latest.csv ${folder}/BTC_size_${today}.csv
+
+
 wget --no-check-certificate "https://www.quandl.com/api/v3/datasets/NASDAQOMX/COMP.csv?api_key=ZXoDiFyiFFUx5eFohZ9i&start_date=2010-01-01" -O ${folder}/nasdaq_latest.csv
 cp -f ${folder}/nasdaq_latest.csv ${folder}/nasdaq_${today}.csv
 
